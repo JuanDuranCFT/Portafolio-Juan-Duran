@@ -53,6 +53,10 @@
     a {
       color: #00a8ff;
       text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
     }
     .skills {
       display: flex;
@@ -64,6 +68,9 @@
       padding: 0.5rem 1rem;
       border-radius: 999px;
       font-size: 0.9rem;
+    }
+    ul {
+      padding-left: 1.2rem;
     }
     @media (max-width: 600px) {
       header h1 { font-size: 1.5rem; }
@@ -81,15 +88,20 @@
 <section>
   <h2>Sobre mí</h2>
   <div class="card">
-    <p>Soy estudiante de Técnico de Nivel Superior en Informática y Aplicaciones. Me gusta realizar páginas web, aplicaciones móviles, mantenimiento de computadoras y cableados de red.</p>
+    <p>
+      Soy estudiante de Técnico de Nivel Superior en Informática y Aplicaciones.
+      Me interesa el desarrollo web y móvil, la integración de bases de datos,
+      el uso de tecnologías en tiempo real y la solución de problemas tecnológicos.
+    </p>
   </div>
 
   <h2>Habilidades</h2>
   <div class="card skills">
     <span>HTML & CSS</span>
+    <span>JavaScript</span>
     <span>PHP & MySQL</span>
+    <span>Firebase</span>
     <span>XAMPP</span>
-    <span>Cisco Packet Tracer</span>
     <span>Android Studio</span>
     <span>Redes y Cableado</span>
     <span>Visual Studio Code</span>
@@ -99,40 +111,54 @@
   </div>
 
   <h2>Proyectos destacados</h2>
+
   <div class="card">
-    <h3>Foro con Base de Datos y API</h3>
-    <p>Desarrollé un foro funcional usando HTML, PHP, MySQL y XAMPP. Incluye autenticación de usuarios, secciones, comentarios y uso de API para modular funciones.</p>
+    <h3>Chat en Vivo con Firebase</h3>
+    <p>
+      Aplicación web de chat en tiempo real desarrollada con HTML, CSS y JavaScript.
+      Permite enviar mensajes de texto e imágenes, editar mensajes y limpiar el historial
+      del chat. Utiliza Firebase Firestore para la sincronización en tiempo real y
+      Cloudinary para el almacenamiento de imágenes.
+    </p>
+
+    <p><strong>Tecnologías utilizadas:</strong></p>
+    <ul>
+      <li>HTML, CSS y JavaScript</li>
+      <li>Firebase Firestore (tiempo real)</li>
+      <li>Cloudinary (subida de imágenes)</li>
+      <li>Diseño responsive para PC y móviles</li>
+    </ul>
+
+    <p>
+      🌐 <a href="https://gentle-kataifi-a7188c.netlify.app" target="_blank">Ver demo en vivo</a><br>
+      💻 <a href="https://github.com/JuanDuranCFT/Chat-en-vivo" target="_blank">Ver código fuente</a>
+    </p>
   </div>
+
   <div class="card">
-  <h3>Chat en Vivo con Firebase</h3>
-  <p>
-    Aplicación web de chat en tiempo real desarrollada con HTML, CSS y JavaScript.
-    Permite enviar mensajes de texto e imágenes, editar mensajes y limpiar el chat.
-    Utiliza Firebase Firestore para sincronización en tiempo real y Cloudinary para
-    almacenamiento de imágenes.
-  </p>
+    <h3>Foro con Base de Datos</h3>
+    <p>
+      Foro web desarrollado con HTML, PHP y MySQL. Incluye autenticación de usuarios,
+      publicación de contenidos y organización por secciones, utilizando XAMPP
+      como entorno de desarrollo.
+    </p>
+  </div>
 
-  <p><strong>Tecnologías:</strong></p>
-  <ul>
-    <li>HTML, CSS, JavaScript</li>
-    <li>Firebase Firestore (tiempo real)</li>
-    <li>Cloudinary (subida de imágenes)</li>
-    <li>Diseño Responsive (PC y móvil)</li>
-  </ul>
-
-  <p>
-    🔗 <a href="https://gentle-kataifi-a7188c.netlify.app" target="_blank">Ver demo en vivo</a><br>
-    💻 <a href="https://github.com/JuanDuranCFT/Chat-en-vivo" target="_blank">Ver código fuente</a>
-  </p>
-</div>
-
+  <div class="card">
+    <h3>Aplicación de detección de gases</h3>
+    <p>
+      Aplicación móvil desarrollada en Android Studio que se conecta a sensores MQ
+      para detectar gases peligrosos en tiempo real y alertar al usuario mediante
+      notificaciones visuales y sonoras.
+    </p>
+  </div>
 
   <h2>Contacto</h2>
   <div class="card">
     <p><strong>Correo:</strong> <a href="mailto:juanduranmarin25@gmail.com">juanduranmarin25@gmail.com</a></p>
-    <p><strong>Telefono:</strong> +56956154862 </p>
-    <p><strong>Ubicación:</strong> Arica - Chile</p>
-    <p><strong>Curriculum VC:</strong> <a href="CV_JuanCarlosDuranMarin.pdf" download="CV_JuanCarlosDuranMarin"> 📄 Descarga mi CV</a></p></p>
+    <p><strong>Teléfono:</strong> +56 9 5615 4862</p>
+    <p><strong>Ubicación:</strong> Arica, Chile</p>
+    <p><strong>Currículum Vitae:</strong> <a href="CV_JuanCarlosDuranMarin.pdf" download>📄 Descargar CV</a></p>
   </div>
 </section>
 
@@ -141,7 +167,4 @@
 </footer>
 
 </body>
-
 </html>
-
-
